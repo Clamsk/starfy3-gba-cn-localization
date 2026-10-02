@@ -1,0 +1,8 @@
+{
+  "font": "WenQuanYi Bitmap Song 12x12",
+  "upstream": "https://github.com/AmusementClub/WenQuanYi-Bitmap-Song-TTF",
+  "original_source": "Original Fonts/wenquanyi_9pt.pcf",
+  "conversion": "Local PCF-to-BDF conversion; glyph shapes retained",
+  "license": "GPL-2.0 with upstream font embedding exception",
+  "notice": "LICENSE-NOTICE.txt"
+}

@@ -1,0 +1,21 @@
+WenQuanYi Bitmap Song, 12x12 source bitmap font.
+Copyright (C) 2004-2010 The WenQuanYi Project Board of Trustees and Qianqian Fang.
+Built upon prior work by Firefly.
+License: GNU GPL version 2 with the following upstream font embedding exception.
+The complete GNU GPL v2 text is provided in GPL-2.0.txt.
+
+As a special exception, if you create a document which uses this
+font, and embed this font or unaltered portions of this font into
+the document, this font does not by itself cause the resulting
+document to be covered by the GNU General Public License. This
+exception does not however invalidate any other reasons why the
+document might be covered by the GNU General Public License. If you
+modify this font, you may extend this exception to your version of
+the font, but you are not obligated to do so. If you do not wish to
+do so, delete this exception statement from your version.
+
+This repository retains the upstream BDF source bitmap file. The upstream
+exception is also retained for our native packing of these bitmap glyphs.
+Project-wide noncommercial policy does not impose additional restrictions
+on this third-party font or supersede its original license.
+

@@ -1,0 +1,59 @@
+{
+  "version": "v24-beta",
+  "repository": "Clamsk/starfy3-cn-localization",
+  "status": "public testing; full human playthrough pending",
+  "source": {
+    "bytes": 16777216,
+    "crc32": "FCAF1AA8",
+    "sha256": "8a7eff8a20319a966465da429dfbb744def4d12f1353f22f21743259c2247533",
+    "revision": "Japan Rev0"
+  },
+  "target": {
+    "bytes": 33554432,
+    "crc32": "E23C2955",
+    "sha256": "9b8823ff7d33fb502bfe73cd15872db7310f556d972a234ee83ebfbffa5f6bc5"
+  },
+  "patch": {
+    "path": "patches/Starfy3_CN_v24_Rev0.bps",
+    "bytes": 676930,
+    "sha256": "91a409f5098f8f027e66d9f1358a23134935cf09dda6f208f5dd3cdb7fb61f35",
+    "format": "BPS delta",
+    "generator": "Flips v198",
+    "statistics": {
+      "source_bytes": 16777216,
+      "target_bytes": 33554432,
+      "source_crc32": "FCAF1AA8",
+      "target_crc32": "E23C2955",
+      "patch_crc32": "ECE33D15",
+      "action_counts": [
+        172,
+        38810,
+        16352,
+        84301
+      ],
+      "action_bytes": {
+        "SourceRead": 15612701,
+        "TargetRead": 258005,
+        "SourceCopy": 4075516,
+        "TargetCopy": 13608210
+      },
+      "embedded_literal_bytes": 258005
+    }
+  },
+  "chinese_messages": 2304,
+  "editable_runs": 8638,
+  "preserved_runs": 9669,
+  "policy": {
+    "roms": false,
+    "official_assets": false,
+    "screenshots": false,
+    "original_text_dumps": false,
+    "rom_download_links": false,
+    "commercialization": false
+  },
+  "validation": {
+    "byte_identical_restoration": true,
+    "local_item_font_checks": "32 native item IDs + 1 unreferenced description checked in isolated QA ROM",
+    "full_playthrough": false
+  }
+}
