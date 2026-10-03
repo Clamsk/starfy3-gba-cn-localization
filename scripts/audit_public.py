@@ -7,7 +7,7 @@ import re
 from bps import read_patch
 
 ROOT=Path(__file__).resolve().parents[1]
-ALLOWED_ROOT={'README.md','NOTICE.md','release.json','.gitignore','SHA256SUMS'}
+ALLOWED_ROOT={'README.md','README.en.md','NOTICE.md','NOTICE.en.md','release.json','.gitignore','SHA256SUMS'}
 def audit(paths):
     result=[]
     for name in paths:

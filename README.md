@@ -1,5 +1,7 @@
 # starfy3-gba-cn-localization
 
+[简体中文](README.md) | [English](README.en.md)
+
 Starfy 3 简体中文汉化工程。
 
 非官方、免费、非商业的简体中文汉化差异补丁与编辑工程。当前公开版本为 **v25 测试版**，尚未完成全流程人工验收，不作为正式完整汉化发布。

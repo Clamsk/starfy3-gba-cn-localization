@@ -1,5 +1,7 @@
 # 不含原版素材的工程组织
 
+[简体中文](ENGINEERING.md) | [English](ENGINEERING.en.md)
+
 ## 可复现基线
 
 输入：用户自备、SHA256 符合 README 的原版镜像。
