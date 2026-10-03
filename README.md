@@ -2,7 +2,7 @@
 
 Starfy 3 简体中文汉化工程。
 
-非官方、免费、非商业的简体中文汉化差异补丁与编辑工程。当前公开版本为 **v24 测试版**，尚未完成全流程人工验收，不作为正式完整汉化发布。
+非官方、免费、非商业的简体中文汉化差异补丁与编辑工程。当前公开版本为 **v25 测试版**，尚未完成全流程人工验收，不作为正式完整汉化发布。
 
 ## 权利声明
 
@@ -18,24 +18,24 @@ Starfy 3 简体中文汉化工程。
 
 请自备原版镜像。本仓库不提供 ROM，也不提供 ROM 下载链接或获取教程。仓库、发行附件和文档均不包含官方 logo、封面、卡带图、游戏截图、官方美术文件或日文/英文原文转储。
 
-Nintendo 的[官方游戏目录](https://www.nintendo.com/en-gb/Nintendo-Switch-Online/Classic-games/Classic-games-Nintendo-Switch-Online-2719182.html)将本作标记为仅日文版本；此状态核对于 2026-10-02。
+Nintendo 的[官方游戏目录](https://www.nintendo.com/en-gb/Nintendo-Switch-Online/Classic-games/Classic-games-Nintendo-Switch-Online-2719182.html)将本作标记为仅日文版本；此状态最近核对于 2026-10-02。
 
 ## 使用补丁
 
-使用 `patches/Starfy3_CN_v24_Rev0.bps`。适用镜像为日版 Rev0，校验的是**未压缩文件**：
+使用 `patches/Starfy3_CN_v25_Rev0.bps`。适用镜像为日版 Rev0，校验的是**未压缩文件**：
 
 | 项目 | 数值 |
 | --- | --- |
 | 原版大小 | 16,777,216 字节（16 MiB） |
 | 原版 CRC32 | `FCAF1AA8` |
 | 原版 SHA256 | `8a7eff8a20319a966465da429dfbb744def4d12f1353f22f21743259c2247533` |
-| 补丁大小 | 676,930 字节（约 661 KiB） |
-| 输出 SHA256 | `9b8823ff7d33fb502bfe73cd15872db7310f556d972a234ee83ebfbffa5f6bc5` |
+| 补丁大小 | 677,697 字节（约 662 KiB） |
+| 输出 SHA256 | `acc0fca232ba9fd5ae3816defb27ae1546400cd9287a9820fe71e3adc7f8d139` |
 
 可用兼容 BPS 的补丁工具，例如 [Flips](https://github.com/Sir-Walrus/Flips)，在本地应用补丁。也可以使用 Python 3.10 或以上版本运行本仓库工具，无第三方依赖：
 
 ```text
-python scripts/build.py --source "local/original.gba" --output "local/Starfy3_CN_v24.gba"
+python scripts/build.py --source "local/original.gba" --output "local/Starfy3_CN_v25.gba"
 ```
 
 工具严格检查原版、补丁与输出校验值；不会下载镜像，也不会覆盖已有文件。生成的镜像只保留在本地，禁止提交或作为发行附件上传。
@@ -46,13 +46,14 @@ python scripts/build.py --source "local/original.gba" --output "local/Starfy3_CN
 
 - 覆盖 2304 条脚本消息，保留控制指令边界；译文经过 GPT 辅助校对，仍欢迎人工指出误译与上下文问题。
 - 包含此前的菜单、教学、美术风格保留、HUD 场景重载与存档弹窗修复。
-- v24 将物品说明改为 12×12 原生点阵字；33 条非空说明重新排版，只改变换行，不改变其正文。
+- v25 在标题空位加入“（v25）汉化 by Clamsk”，采用原生点阵、金黄渐变与蓝色描边；现有标题、角色、背景和 START 提示保留。
+- 继承 v24 的物品说明改为 12×12 原生点阵字；33 条非空说明重新排版，只改变换行，不改变其正文。
 - 仍有海报、关卡告示牌、联机提示等日文图块候选待处理；尚未完成所有关卡、小游戏、图鉴、换装、商店、结局、保存/读档及双角色切换的人工验收。
 - 这是测试版本；编码尚未宣布冻结。验证范围见 [验证记录](docs/VALIDATION.md)。
 
 ## 工程与编辑
 
-工程使用本次 BPS 作为可复现的 v24 基线。原版代码、图像、控制数据均从用户的本地镜像读取，不随工程分发。
+工程使用本次 BPS 作为可复现的 v25 基线。原版代码、图像、控制数据均从用户的本地镜像读取，不随工程分发。
 
 `translation/messages.zh.json` 包含当前版本的中文文本及控制边界位置，不含日文/英文参考原文或原始控制包。`translation/encoding.json` 保留现有编码；`engineering/bmg_layout.json` 记录脚本地址和指针位置。
 
@@ -68,7 +69,7 @@ python scripts/build.py --source "local/original.gba" --edits "local/edits.zh.js
 
 ## 发布与备份
 
-仅发布差异补丁、原创工程代码、中文译文、开源字库及纯文字文档。BPS 使用 SourceRead / SourceCopy 引用自备镜像中的未改动数据，并使用 TargetCopy 去除重复；补丁还原已经校验到 v24 的完整 SHA256。
+仅发布差异补丁、原创工程代码、中文译文、开源字库及纯文字文档。BPS 使用 SourceRead / SourceCopy 引用自备镜像中的未改动数据，并使用 TargetCopy 去除重复；补丁还原已经校验到 v25 的完整 SHA256。
 
 `.gitignore` 排除镜像、存档、截图、可执行文件与备份。提交前执行 `python scripts/audit_public.py`，CI 也会检查 Git 实际跟踪的文件。差异补丁设有 1 MiB 大小门槛。
 

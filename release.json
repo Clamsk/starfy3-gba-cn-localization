@@ -1,5 +1,5 @@
 {
-  "version": "v24-beta",
+  "version": "v25-beta",
   "repository": "Clamsk/starfy3-gba-cn-localization",
   "status": "public testing; full human playthrough pending",
   "source": {
@@ -10,34 +10,34 @@
   },
   "target": {
     "bytes": 33554432,
-    "crc32": "E23C2955",
-    "sha256": "9b8823ff7d33fb502bfe73cd15872db7310f556d972a234ee83ebfbffa5f6bc5"
+    "crc32": "6DBDD777",
+    "sha256": "acc0fca232ba9fd5ae3816defb27ae1546400cd9287a9820fe71e3adc7f8d139"
   },
   "patch": {
-    "path": "patches/Starfy3_CN_v24_Rev0.bps",
-    "bytes": 676930,
-    "sha256": "91a409f5098f8f027e66d9f1358a23134935cf09dda6f208f5dd3cdb7fb61f35",
+    "path": "patches/Starfy3_CN_v25_Rev0.bps",
+    "bytes": 677697,
+    "sha256": "f4865ac621fed663569471d2aee13963b8ceb8279c4110d1df961d91b335f471",
     "format": "BPS delta",
     "generator": "Flips v198",
     "statistics": {
       "source_bytes": 16777216,
       "target_bytes": 33554432,
       "source_crc32": "FCAF1AA8",
-      "target_crc32": "E23C2955",
-      "patch_crc32": "ECE33D15",
+      "target_crc32": "6DBDD777",
+      "patch_crc32": "87A9650E",
       "action_counts": [
         172,
-        38810,
-        16352,
-        84301
+        38849,
+        16364,
+        84360
       ],
       "action_bytes": {
-        "SourceRead": 15612701,
-        "TargetRead": 258005,
-        "SourceCopy": 4075516,
-        "TargetCopy": 13608210
+        "SourceRead": 15612700,
+        "TargetRead": 258440,
+        "SourceCopy": 4075718,
+        "TargetCopy": 13607574
       },
-      "embedded_literal_bytes": 258005
+      "embedded_literal_bytes": 258440
     }
   },
   "chinese_messages": 2304,
@@ -54,6 +54,15 @@
   "validation": {
     "byte_identical_restoration": true,
     "local_item_font_checks": "32 native item IDs + 1 unreferenced description checked in isolated QA ROM",
-    "full_playthrough": false
+    "full_playthrough": false,
+    "title_frames_compared": 9,
+    "signature_only_runtime_difference": true,
+    "file_and_suspend_screens_identical": true,
+    "title_credit_generator_exact": true
+  },
+  "title_credit": {
+    "text": "（v25）汉化 by Clamsk",
+    "style": "native 12px bitmap, cream/gold fill and blue outline",
+    "original_logo_and_art_preserved": true
   }
 }

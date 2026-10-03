@@ -1,4 +1,4 @@
-"""Offline reproduction of v24; never downloads an original image."""
+"""Offline reproduction of v25; never downloads an original image."""
 import argparse
 import hashlib
 import json
@@ -16,7 +16,7 @@ def baseline(source):
         raise ValueError('Patch SHA256 mismatch')
     output, _ = read_patch(patch, source)
     if hashlib.sha256(output).hexdigest() != manifest['target']['sha256']:
-        raise ValueError('v24 output SHA256 mismatch')
+        raise ValueError('v25 output SHA256 mismatch')
     return output
 
 def main():
